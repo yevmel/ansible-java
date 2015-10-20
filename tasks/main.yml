@@ -1,0 +1,11 @@
+---
+- name: create JAVA_HOME
+  file: path={{ home }} state=directory owner={{ username }} group={{ groupname }}
+  sudo: yes
+
+- name: install jdk
+  command: tar xz --strip-components 1 -f {{ file }} -C {{ home }} creates={{ home }}/bin
+
+- name: expose JAVA_HOME
+  template: dest=/etc/profile.d/ src=010_java.sh
+  sudo: yes

@@ -1,0 +1,5 @@
+---
+home      : '/opt/java'
+file      : /vagrant/files/jdk.tar.gz
+username  : vagrant
+groupname : '{{ username }}'
