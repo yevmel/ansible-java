@@ -1,0 +1,10 @@
+---
+galaxy_info:
+  author: Yevgeniy Melnichuk
+  description: installs a jdk/jre
+  license: MIT
+  min_ansible_version: 1.9
+  platforms:
+  categories:
+  - development
+dependencies:
